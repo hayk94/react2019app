@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/styles';
 import { push } from 'connected-react-router';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { useTranslation } from 'react-i18next/hooks';
 import {
   increment,
   incrementAsync,
@@ -19,10 +20,12 @@ const useStyles = makeStyles({
 
 const Home = props => {
   const classes = useStyles();
+  const [t] = useTranslation();
 
   return (
     <div>
       <h1>Home</h1>
+      <h1>{t('Welcome to React')}</h1>
       <p>Count: {props.count}</p>
 
       <p>
