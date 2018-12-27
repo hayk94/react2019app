@@ -1,11 +1,10 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import theme from './theme';
 import Home from '../Home';
 import About from '../About';
-
-const theme = createMuiTheme();
 
 const App = () => (
   <MuiThemeProvider theme={theme}>
