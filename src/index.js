@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import store, { history } from './store';
-import App from './containers/App';
+import App from './App';
 import './index.css';
 import './i18n';
 import { install } from '@material-ui/styles';
