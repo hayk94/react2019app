@@ -1,5 +1,5 @@
 import React from 'react';
-import { MuiThemeProvider } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import {
   Switch,
@@ -8,12 +8,12 @@ import theme from './theme';
 import Auth from './Auth';
 
 const App = () => (
-  <MuiThemeProvider theme={theme}>
+  <ThemeProvider theme={theme}>
     <CssBaseline />
     <Switch>
       <Auth />
     </Switch>
-  </MuiThemeProvider>
+  </ThemeProvider>
 );
 
 export default App;
